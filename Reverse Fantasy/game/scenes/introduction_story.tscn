@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://dstk3totf5u3s"]
+
+[ext_resource type="Script" uid="uid://dqa722m0ijhmk" path="res://script/introduction_story.gd" id="1_km4r1"]
+[ext_resource type="Texture2D" uid="uid://6kgr8egxnccc" path="res://assets/BG/prologue_1.jpg" id="1_qnw57"]
+
+[node name="IntroductionStory" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_km4r1")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1157.0
+offset_bottom = 868.0
+texture = ExtResource("1_qnw57")
+expand_mode = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 481.0
+offset_right = 925.0
+offset_bottom = 630.0
+
+[node name="StoryLabel" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 20.0
+offset_right = 693.0
+offset_bottom = 136.0
+
+[node name="NextButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 933.0
+offset_top = 22.0
+offset_right = 1117.0
+offset_bottom = 149.0
+text = "Next"
