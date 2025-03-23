@@ -2,10 +2,10 @@ extends Control
 
 # List of story text
 var story = [
-	{ "text": "Long ago, the world was ruled by powerful beings...", "bg": "res://assets/BG/prologue_1.jpg" },
-	{ "text": "But one day, a great calamity struck the land.", "bg": "res://assets/BG/prologue_1.jpg" },
-	{ "text": "Now, only a few remain to tell the tale...", "bg": "res://assets/BG/prologue_2.jpg" },
-	{ "text": "Your journey begins here.", "bg": "res://assets/BG/prologue_2.jpg" }
+	{ "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit quibusdam iste reiciendis debitis?", "bg": "res://assets/BG/prologue_1.jpg" },
+	{ "text": "Veritatis sit quibusdam iste reiciendis debitis? Quibusdam dolorem perspiciatis", "bg": "res://assets/BG/prologue_1.jpg" },
+	{ "text": "repudiandae ipsam dignissimos, libero facilis vel ", "bg": "res://assets/BG/prologue_2.jpg" },
+	{ "text": "voluptas quod quidem veniam reiciendis tenetur magni..", "bg": "res://assets/BG/prologue_2.jpg" }
 ]
 
 var text_index = 0  # Tracks current text position
