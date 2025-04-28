@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1745497751
+::res://::1745761001
 default_bus_layout.tres::AudioBusLayout/AudioBusLayout::918855508154016931::1742731164::0::1::::<><><>0<>0<><>::
 export_presets.cfg::TextFile/TextFile::-1::1742731164::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::2381771403882821128::1742731164::1742731262::1::::<><><>0<>0<>405b45406324c3352fe13dca075b5203<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -31,9 +31,9 @@ world_tileset.png::CompressedTexture2D/CompressedTexture2D::602945687062318005::
 ::res://scenes/::1742731451
 coin.tscn::PackedScene/PackedScene::7301920639632046594::1742731164::0::1::::<><><>0<>0<><>::uid://b8j6jjaq6h3e0::::res://assets/sprites/coin.png<>uid://dxi3mjvf7ldos::::res://script/coin.gd<>uid://de8mp7byoayrq::::res://assets/sounds/coin.wav
 game.tscn::PackedScene/PackedScene::9063470983912060416::1742731164::0::1::::<><><>0<>0<><>::uid://b1lwfci07ldly::::res://script/game.gd<>uid://btyponmovnejd::::res://scenes/player.tscn<>uid://cy7q8y8knfdhh::::res://script/game_manager.gd<>uid://iucosbr4kfe0::::res://assets/sprites/world_tileset.png<>uid://cqv3rxcv8dolf::::res://scenes/platform.tscn<>uid://dcbdtioohpupm::::res://scenes/coin.tscn<>uid://uppw3xoru0v1::::res://scenes/pause_menu.tscn<>uid://ck8t62a7s62b3::::res://scenes/kzone.tscn<>uid://pnm6jjnoqd3r::::res://scenes/slime.tscn
-introduction_story.tscn::PackedScene::8462542606490096058::1742731432::0::1::::<><><>0<>0<><>::uid://dqa722m0ijhmk::::res://script/introduction_story.gd<>uid://6kgr8egxnccc::::res://assets/BG/prologue_1.jpg
+introduction_story.tscn::PackedScene/PackedScene::8462542606490096058::1742731432::0::1::::<><><>0<>0<><>::uid://dqa722m0ijhmk::::res://script/introduction_story.gd<>uid://6kgr8egxnccc::::res://assets/BG/prologue_1.jpg
 kzone.tscn::PackedScene/PackedScene::5544064671733804354::1742731164::0::1::::<><><>0<>0<><>::uid://dnd38ahpvej4f::::res://script/kzone.gd
-main_menu.tscn::PackedScene::6732058436095295245::1742731451::0::1::::<><><>0<>0<><>::uid://6wmni1o4tl6i::::res://script/main_menu.gd<>uid://dsb3x21er6vf0::::res://assets/BG/main_menu.jpg
+main_menu.tscn::PackedScene/PackedScene::6732058436095295245::1742731451::0::1::::<><><>0<>0<><>::uid://6wmni1o4tl6i::::res://script/main_menu.gd<>uid://dsb3x21er6vf0::::res://assets/BG/main_menu.jpg
 music.tscn::PackedScene/PackedScene::6451909959861325314::1742731164::0::1::::<><><>0<>0<><>::uid://bpapnxabxw1pn::::res://assets/music/time_for_adventure.mp3
 pause_menu.tscn::PackedScene/PackedScene::1435694088272883960::1742731164::0::1::::<><><>0<>0<><>::uid://cvbvtcafyqi6r::::res://script/pause_menu.gd
 platform.tscn::PackedScene/PackedScene::5940946444848859387::1742731164::0::1::::<><><>0<>0<><>::uid://bli4modj1pby4::::res://assets/sprites/platforms.png
@@ -43,7 +43,7 @@ slime.tscn::PackedScene/PackedScene::1080454016120905749::1742731164::0::1::::<>
 coin.gd::GDScript/GDScript::8791842487532266162::1742731164::0::1::::<>Area2D<><>0<>0<><>::
 game.gd::GDScript/GDScript::4235383594971207442::1742731164::0::1::::<>Node2D<><>0<>0<><>::
 game_manager.gd::GDScript/GDScript::6524465417922893177::1742731164::0::1::::<>Node<><>0<>0<><>::
-introduction_story.gd::GDScript::8284276147306825766::1742731392::0::1::::<>Control<><>0<>0<><>::
+introduction_story.gd::GDScript/GDScript::8284276147306825766::1742731392::0::1::::<>Control<><>0<>0<><>::
 kzone.gd::GDScript/GDScript::8079669170155619987::1742731164::0::1::::<>Area2D<><>0<>0<><>::
 main_menu.gd::GDScript/GDScript::2222022743629606394::1742731164::0::1::::<>Control<><>0<>0<><>::
 pause_menu.gd::GDScript/GDScript::6250180553777819375::1742731164::0::1::::<>Control<><>0<>0<><>::
