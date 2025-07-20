@@ -1,0 +1,74 @@
+[gd_scene load_steps=9 format=3 uid="uid://8sh7pkoscych"]
+
+[ext_resource type="Script" uid="uid://dmj1to8avacy7" path="res://Scenes/enemy.gd" id="1_1f0kj"]
+[ext_resource type="AudioStream" uid="uid://dld40jjpg4lxo" path="res://Assets/Sounds/bullet_sounds/M4A1_Sound.wav" id="2_afpow"]
+[ext_resource type="Texture2D" uid="uid://dxuo06vycqspt" path="res://Assets/Enemy/KPCU GUARD-01.png" id="3_afpow"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1f0kj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_afpow")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ukr8"]
+size = Vector2(16, 16)
+
+[sub_resource type="GDScript" id="GDScript_1f0kj"]
+script/source = "extends Area2D
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1f0kj"]
+radius = 200.16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1f0kj"]
+bg_color = Color(0, 0.726237, 0.171358, 1)
+
+[node name="Enemy" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 19
+script = ExtResource("1_1f0kj")
+
+[node name="ShootSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_afpow")
+
+[node name="EnemyAnim" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1f0kj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5ukr8")
+
+[node name="NavAgent" type="NavigationAgent2D" parent="."]
+navigation_layers = 17
+path_postprocessing = 1
+debug_enabled = true
+
+[node name="RoamTime" type="Timer" parent="."]
+
+[node name="DetectionArea" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 19
+script = SubResource("GDScript_1f0kj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
+shape = SubResource("CircleShape2D_1f0kj")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -32.0
+offset_top = -24.0
+offset_right = 32.0
+offset_bottom = -17.0
+theme_override_font_sizes/font_size = 1
+theme_override_styles/fill = SubResource("StyleBoxFlat_1f0kj")
+value = 58.0
+
+[node name="GunPivot" type="Marker2D" parent="."]
+
+[node name="MuzzleFlash" type="Sprite2D" parent="GunPivot"]
+position = Vector2(14, -2)
+
+[connection signal="body_entered" from="DetectionArea" to="." method="_on_area_2d_body_entered"]

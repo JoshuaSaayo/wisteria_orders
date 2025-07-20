@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://b02no0jqgnptb"]
+
+[ext_resource type="Script" uid="uid://disljinwbhfnj" path="res://Scenes/Guns/VK-V9.gd" id="1_10c7e"]
+[ext_resource type="AudioStream" uid="uid://h677fohcc3s" path="res://Assets/Sounds/bullet_sounds/VK-V9PDW_SHOOT.wav" id="2_dsjth"]
+[ext_resource type="AudioStream" uid="uid://diq6hq2br174p" path="res://Assets/Sounds/reload_sounds/VK-V9PDW_RELOAD.wav" id="3_ptkh8"]
+
+[node name="VK-V9" type="Node2D"]
+script = ExtResource("1_10c7e")
+display_name = "VK-V9 ASSAULT"
+
+[node name="ShotSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_dsjth")
+
+[node name="ReloadSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ptkh8")
