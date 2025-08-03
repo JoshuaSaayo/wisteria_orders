@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Project: Fallen Republic"
+config/name="Wisteria Orders"
 run/main_scene="uid://dupot7pwyio7x"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
